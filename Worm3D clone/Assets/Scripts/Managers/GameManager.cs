@@ -69,14 +69,7 @@ public class GameManager : MonoBehaviour
     //lazy turn changer
      private async void HandleNextTurn()
     {
-        await Task.Delay (1000);
-
-        if (players.Count == 1)
-        {
-            UpdateGameState(GameState.Victory);
-        }
-        else
-        {
+        
             await Task.Delay (1000);
             if(players[0].tag == "CurrentPlayer")
             {
@@ -89,7 +82,7 @@ public class GameManager : MonoBehaviour
                 players[1].tag = "Player";
                 players[0].tag = "CurrentPlayer";
             }   
-        }
+        
     }
 
 
@@ -104,6 +97,10 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             UpdateGameState(GameState.NextTurn);
+        }
+        if (players.Count == 1)
+        {
+            UpdateGameState(GameState.Victory);
         }
     }
 }

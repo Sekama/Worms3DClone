@@ -12,14 +12,14 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private Healthbar healthbar;
     [SerializeField] private Healthbar healthbarUI;
     [SerializeField] private Canvas healthbarCanvas;
-    [SerializeField] private Canvas healthbarUICanvas;
+   // [SerializeField] private Canvas healthbarUICanvas;
 
     private void Start() {
         currentHealth = maxHealth;
 
         healthbar.UpdateHealthBar(maxHealth,currentHealth);
         healthbarCanvas = healthbar.GetComponent<Canvas>();
-        healthbarUICanvas = healthbarUI.GetComponent<Canvas>();
+        //healthbarUICanvas = healthbarUI.GetComponent<Canvas>();
     }
 
 
@@ -38,12 +38,12 @@ public class PlayerHealth : MonoBehaviour
         if (transform.tag == "CurrentPlayer")
         {
             healthbarCanvas.enabled = false;
-            healthbarUICanvas.enabled = true;
+           // healthbarUICanvas.enabled = true;
         }
         else 
         { 
             healthbarCanvas.enabled = true;
-            healthbarUICanvas.enabled = false;
+           // healthbarUICanvas.enabled = false;
         }
     }
 

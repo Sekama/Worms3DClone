@@ -33,6 +33,9 @@ public class ProjectileBehavior : MonoBehaviour
     }
         //changed to manual turn switch
     private void OnDestroy() {
-        //GameManager.Instance.UpdateGameState(GameState.NextTurn);
+      
+           // GameManager.Instance.UpdateGameState(GameState.NextTurn);
+        
+        
     }
 }
