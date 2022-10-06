@@ -18,8 +18,8 @@ can no longer move, but you are still able to fire your weapon. When your turn i
 hitting your opponent with projectiles until their health depletes.
 
 Controls:
-WASD - movement
-Spacebar - jump
-RMB - aim mode
-LMB - fire projectile (while in aim mode)
-R - pass turn
+- WASD -- movement
+- Spacebar -- jump
+- RMB -- aim mode
+- LMB -- fire projectile (while in aim mode)
+- R -- pass turn
